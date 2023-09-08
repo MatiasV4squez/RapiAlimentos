@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Insumos</title>
+    <link rel="stylesheet" href="estilos/estilo-1.css">
+</head>
+
+<body>
+    <header>
+        <h1>Venta de Insumos</h1>
+    </header>
+    <nav>
+        <a href="#"> Link del Inicio</a>
+        <a href="#">Link de Productos</a>
+        <a href="#"> Link Carrito</a>
+        <a href="#">Link Contacto</a>
+    </nav>
+
+    <!--barra lateral de la pagina-->
+    <aside class="barra-lateral">
+        <!--barra de busqueda-->
+        <div id="bar-filtro">
+            <label for="filtro"><b>Filtros</b></label>
+            <input type="search" name="filtro" id="filtro" placeholder="seleccionar filtro">
+        </div>
+        <!--seleccion de filtros-->
+        <div>
+            <div class="select-ftro">
+                <input type="checkbox" name="ftro1" value="F1">
+                <label for="F1">filtro1</label>
+            </div>
+    
+            <div class="select-ftro">
+                <input type="checkbox" name="ftro2" value="F2">
+                <label for="F2">filtro2</label>
+            </div>
+    
+            <div class="select-ftro">
+                <input type="checkbox" name="ftro3" value="F3">
+                <label for="F3">filtro3</label>
+            </div>
+        </div>
+    </aside>
+
+
+    <section class="sect-prod">
+        <div>
+            <div class="img-prod">
+                <img src="https://cdn.dimerc.cl/media/catalog/product/cache/1/thumbnail/x600/040ec09b1e35df139433887a97daa66f/c/l/cl_z382428-arroz-grado2-1kg-largo-gran-seleccion-tucapel.jpg"
+                    alt="Producto 1" width="100px">
+            </div>
+            <div class="div-prod">
+                <h2>Arroz Tucapel 1 kg</h2>
+                <p>Arroz Tucapel grano largo ancho 1KG.</p>
+                <p>Precio: $700 c/u </p>
+                <div class="bottom-prod">
+                    <input type="button" value="Carrito">
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>Copyright © 2023. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

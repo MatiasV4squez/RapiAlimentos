@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #00c278;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*todo lo de los prod*/
+nav {
+    background-color: #444;
+    padding: 1rem;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+footer {
+    background-color: #00c278;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    float: left;
+}
+
+/*todo de la barra lateral*/
+.barra-lateral{
+    background-color: pink;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 337px;
+    float: left;
+}
+
+#bar-filtro{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.select-ftro{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.select-ftro label{
+    margin-left: 5px;
+    margin-right: 10px; 
+}
+
+/*todo de los prod*/
+
+.sect-prod{
+    margin-top: 10px;
+    margin-left: 260px;
+}
+
+.div-prod {
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.img-prod {
+    align-items: center;
+    float: left;
+}
+
+.bottom-prod{
+    border: 2px black;
+    float: left;
+}
