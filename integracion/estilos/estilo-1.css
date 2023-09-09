@@ -1,39 +1,32 @@
+@media (max-width:1366px){
+
+
+/*COSAS VARIAS*/
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
 }
 
-header {
+.head-p {
     background-color: #00c278;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
-/*todo lo de los prod*/
-nav {
+/*CONF DE LOS LINKS DE LA PAGINA*/
+.nav-conf {
     background-color: #444;
     padding: 1rem;
-    color: white;
 }
 
-nav a {
+.nav-conf a{
     color: white;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 30px;
 }
 
-footer {
-    background-color: #00c278;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    float: left;
-}
 
-/*todo de la barra lateral*/
+/*TODO LO DE LA BARRA LATERAL, FILTRO*/
 .barra-lateral{
     background-color: pink;
     margin-top: 10px;
@@ -60,24 +53,32 @@ footer {
     margin-right: 10px; 
 }
 
-/*todo de los prod*/
+/*TODO LO DE PRODUCTOS*/
+.inf-prod{
+    float: left;
+}
 
-.sect-prod{
+.inf-prod p{
+    margin: 0px;
+    margin-right: 5px;
+}
+
+.conf-general{
     margin-top: 10px;
-    margin-left: 260px;
-}
-
-.div-prod {
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.img-prod {
-    align-items: center;
+    margin-left: 5.5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
     float: left;
 }
 
-.bottom-prod{
-    border: 2px black;
+.conf-general img{
     float: left;
 }
+
+.btom-prod{
+    margin: 15px;
+    float: left;
+}
+
+} /*NO BORRAR ESTO ES DE LA MEDIA*/
