@@ -54,18 +54,14 @@ body {
 }
 
 /*TODO LO DE PRODUCTOS*/
-.inf-prod{
-    float: left;
-}
-
-.inf-prod p{
-    margin: 0px;
-    margin-right: 5px;
+.div-contenedor{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-gap: 5px;
 }
 
 .conf-general{
-    margin-top: 10px;
-    margin-left: 5.5px;
     border-style: solid;
     border-color: black;
     border-width: 1px;
@@ -74,6 +70,15 @@ body {
 
 .conf-general img{
     float: left;
+}
+
+.inf-prod{
+    float: left;
+}
+
+.inf-prod p{
+    margin: 0px;
+    margin-right: 5px;
 }
 
 .btom-prod{
