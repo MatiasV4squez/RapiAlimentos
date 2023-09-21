@@ -50,6 +50,7 @@ section {
     align-items: center;
     margin-bottom: 1rem;
     flex-direction: row;
+    margin-left: 1px;
 }
 
 .producto img {

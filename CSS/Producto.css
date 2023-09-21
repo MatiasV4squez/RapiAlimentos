@@ -18,6 +18,15 @@ h1 {
 
 }
 
+h3 {
+    font-size: 90%;
+}
+
+p {
+    font-size: 75%;
+}
+
+
 nav {
     background-color: rgba(59, 154, 145, 0);
     padding: 1rem;
@@ -43,24 +52,28 @@ section {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+.pre {
+    display: flex;
+    flex-direction: row;
 }
 
 .producto {
     display: flex;
-    align-items: center;
     margin-bottom: 1rem;
+    margin-left: 30px;
     flex-direction: row;
 }
 
 .producto img {
     max-width: 100px;
     margin-right: 1rem;
-}
-
-#productoS {
     display: flex;
     flex-direction: row;
 }
+
 
 footer {
     background-color: #65baa6;
