@@ -39,10 +39,19 @@ nav a {
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    font-style: oblique;
     margin-left:40px ;
-    margin-right:240px;
+    margin-right:140px;
     margin-bottom: 100px;
+}
+
+.heDiv {
+  display: flex; 
+  margin-bottom: -200px; 
+}
+
+.Ihtml {
+    margin-left: 20px;
+    margin-right: 70px;
 }
 
 section {
@@ -79,7 +88,8 @@ footer {
     background-color: #65baa6;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 55px;
     position: relative;
+
 
 }
