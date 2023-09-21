@@ -7,7 +7,7 @@ body {
 }
 
 .head-p {
-    background-color: #00c278;
+    background-color: #009b60;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -27,30 +27,28 @@ body {
 
 
 /*TODO LO DE LA BARRA LATERAL, FILTRO*/
-.barra-lateral{
-    background-color: pink;
+.bar-lateral{
+    background-color: #ffc923;
     margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    height: 337px;
+    margin-bottom: 1000px;
+    margin-right: 5px;
+    height: 337px; /* esto es temporal*/
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
     float: left;
 }
 
-#bar-filtro{
+.bar-serch{
+    margin: 2px;
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-bottom: 25px;
 }
 
-.select-ftro{
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.select-ftro label{
-    margin-left: 5px;
-    margin-right: 10px; 
+.bar-elementos li{
+    margin-left:-15px ;
+    margin-bottom: 10px;
+    list-style: none;
 }
 
 /*TODO LO DE PRODUCTOS*/
@@ -58,32 +56,38 @@ body {
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    grid-gap: 5px;
+    grid-gap: 3px;
 }
 
 .conf-general{
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    float: left;
 }
 
 .conf-general img{
     float: left;
 }
 
-.inf-prod{
-    float: left;
-}
-
 .inf-prod p{
-    margin: 0px;
     margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
 }
 
 .btom-prod{
     margin: 15px;
     float: left;
+}
+
+/*dentro de los productos 
+parte de los cambio de pagina*/
+
+.camb-pag{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
 }
 
 } /*NO BORRAR ESTO ES DE LA MEDIA*/
