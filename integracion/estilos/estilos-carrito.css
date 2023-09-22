@@ -1,0 +1,45 @@
+@media (max-width:1366px){
+
+/*COSAS VARIAS*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+p{
+    margin: 0px;
+}
+
+.head-p {
+    background-color: #009b60;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*CONF DE LOS LINKS DE LA PAGINA*/
+.nav-conf {
+    background-color: #444;
+    padding: 1rem;
+}
+
+.nav-conf a{
+    color: white;
+    text-decoration: none;
+    margin-right: 123px;
+}
+
+.display-carrito{
+    background-color: lightgreen;
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 56.6% 42.5%;
+    grid-gap: 10px;
+}
+
+.conf-bar{
+    background-color: #ffc923;
+    grid-column: 2 / 3;
+    grid-row: 1 / 7;
+}
+/*no borrar coso del media*/
+}
