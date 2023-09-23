@@ -22,10 +22,10 @@
                 </div>
                 <div class="Ihtml">
                     <a href="Contacto.html">Contacto</a>
+                <div class="carrito-de-compras">
+                    <h2>Carrito de Compras</h2>
+                    <div id="elementos-del-carrito"></div>
                 </div>
-                <a href="Carrito.html">
-                    <img src="../carritoC.png">
-                </a>
             </div>
             
         </nav>
@@ -77,13 +77,12 @@
                     <h3>Producto 2</h>
                     <p>Descripción del producto. </p>
                     <p>Precio: $300 c/u </p>
-                    <button>Agregar al carrito</button>
+                    <button class="boton-agregar-al-carrito" onclick="agregarAlCarrito('Producto 2', 10, 'producto2.jpg')">Agregar al carrito</button>
                 </div>
             </div>
         </div>
         
     </section>
-
     <section>
         <h2></h2>
     </section>
@@ -95,7 +94,7 @@
     <section>
         <h2></h2>
     </section>
-
+    <script src="../JS/carrito.js"></script>
     <footer>
         <p>Copyright © 2023. Todos los derechos reservados.</p>
     </footer>
