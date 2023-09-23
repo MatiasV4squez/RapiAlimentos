@@ -28,18 +28,59 @@ p{
     margin-right: 123px;
 }
 
-.display-carrito{
-    background-color: lightgreen;
-    margin: 10px 0px;
-    display: grid;
-    grid-template-columns: 56.6% 42.5%;
-    grid-gap: 10px;
+/*CONF DEL ASIDE DEL LA PAGINA*/
+.pos-bar{
+    /*background-color: #ffc923;*/
+    border: 1px solid black;
+    padding: 0% 3%;
+    margin: 10px 75px 10px 0px;
+    float: right;
 }
 
-.conf-bar{
-    background-color: #ffc923;
-    grid-column: 2 / 3;
-    grid-row: 1 / 7;
+.info-compra p {
+    margin: 10px 0px;
 }
+
+.info-compra li{
+    margin: 0px 0px 10px -40px;
+    list-style: none;
+}
+
+.usr-pagar button{
+    margin: 10px 0px;
+    display: block;
+}
+
+/*CONF DE LOS PRODUCTOS EN EL CARRITO*/
+.display-carrito{
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px 0px;
+    float: left;
+}
+
+.info-prod img{
+    margin: 2px 0px;
+    float: left;
+}
+
+.detalles-prod{
+    float: left;
+}
+
+.detalles-prod p{
+    margin: 10px 5px 0px 5px;
+}
+
+.cant-prod{
+    margin: 70px;
+    float: left;
+}
+
+.del-prod{
+    margin: 60px;
+    float: left;
+}
+
 /*no borrar coso del media*/
 }

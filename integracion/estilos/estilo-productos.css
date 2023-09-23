@@ -84,6 +84,7 @@ parte de los cambio de pagina*/
 .camb-pag-conf{
     border: 1px groove black;
     border-radius: 25%;
+    margin: 0px 5px;
 }
 .camb-pag-conf a{
     color: black;
