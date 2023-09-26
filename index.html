@@ -5,86 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Insumos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
-
-        header {
-            background-color: #00c278;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 1rem;
-            color: white;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 1rem;
-        }
-
-        section {
-            margin: 2rem;
-            padding: 1rem;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .producto {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .producto img {
-            max-width: 100px;
-            margin-right: 1rem;
-        }
-
-        footer {
-            background-color: #00c278;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
-
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet" type="text/css" > 
 </head>
 
 <body>
     <header>
-        <h1>Venta de Insumos</h1>
+        <img src="logo.png" alt="">
+        <h1>RapiAlimentos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="html/Productos.html">Productos</a>
+            <a href="html/Carrito.html">Carrito</a>
+            <a href="html/Contacto.html">Contacto</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#"> Link del Inicio</a>
-        <a href="#">Link de Productos</a>
-        <a href="#"> Link Carrito</a>
-        <a href="#">Link Contacto</a>
-    </nav>
-    <section>
+    
 
+
+    <section class="productoS">
         <div class="producto">
             <img src="https://cdn.dimerc.cl/media/catalog/product/cache/1/thumbnail/x600/040ec09b1e35df139433887a97daa66f/c/l/cl_z382428-arroz-grado2-1kg-largo-gran-seleccion-tucapel.jpg"
                 alt="Producto 1">
-            <div>
-                <h2>Arroz Tucapel 1 kg</h2>
-                <p>Arroz Tucapel grano largo ancho 1KG.</p>
-                <p>Precio: $700 c/u </p>
-                <button>Agregar al carrito</button>
-            </div>
+        <div>
+            <h2>Arroz Tucapel 1 kg </h2>
+            <p><b>Arroz Tucapel</b><br> 
+                grano largo ancho <br>
+                1KG.<br>
+                Precio: $700 c/u<br>
+            </p>
+            <button>Agregar al carrito</button>
         </div>
-
+        </div>
         <div class="producto">
             <img src="producto2.jpg" alt="Producto 2">
             <div>
@@ -94,7 +45,33 @@
                 <button>Agregar al carrito</button>
             </div>
         </div>
-        <!-- Agrega más productos aquí -->
+        <div class="producto">
+            <img src="producto2.jpg" alt="Producto 2">
+            <div>
+                <h2>Producto 2</h2>
+                <p>Descripción del producto. </p>
+                <p>Precio: $300 c/u </p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="producto2.jpg" alt="Producto 2">
+            <div>
+                <h2>Producto 2</h2>
+                <p>Descripción del producto. </p>
+                <p>Precio: $300 c/u </p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="producto2.jpg" alt="Producto 2">
+            <div>
+                <h2>Producto 2</h2>
+                <p>Descripción del producto. </p>
+                <p>Precio: $300 c/u </p>
+                <button>Agregar al carrito</button>
+            </div class="productoS">
+        </div>
     </section>
     <footer>
         <p>Copyright © 2023. Todos los derechos reservados.</p>
