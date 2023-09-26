@@ -101,6 +101,7 @@ footer {
     padding: 20px;
     margin: 20px;
     width: 300px;
+    position:absolute;
 }
 
 .carrito-de-compras h2 {
