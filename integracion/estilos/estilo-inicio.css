@@ -1,0 +1,72 @@
+@media (max-width: 1366px){
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 0px;
+}
+
+.head-p {
+    background-color: #009b60;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*CONF DE LOS LINKS DE LA PAGINA*/
+.nav-conf {
+    background-color: #444;
+    padding: 1rem;
+}
+
+.nav-conf a{
+    color: white;
+    text-decoration: none;
+    margin-right: 123px;
+}
+
+/*display de la pagina*/
+.display-publicidad{
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 300px);
+}
+
+
+/*configuracion de los cuadros de publicidad*/
+/*cajas de la derecha*/
+#caja-1{
+    border: 1px solid black;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+#caja-4{
+    border: 1px solid black;
+    grid-column: 1 / 3;
+    grid-row: 3 / 7;
+}
+
+/*cajas de la izquierda*/
+#caja-2{
+    border: 1px solid black;
+    grid-column: 3 / 6;
+    grid-row: 1 / 2;
+}
+
+#caja-3{
+    border: 1px solid black;
+    grid-column: 3 / 6;
+    grid-row: 2 / 4;
+}
+
+#caja-5{
+    border: 1px solid black;
+    grid-column: 3 / 6;
+    grid-row: 4 / 7;
+}
+/*COSO DEL MEDIA NO BORRAR*/
+}
