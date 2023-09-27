@@ -7,7 +7,7 @@ body {
 
 header {
     display: flex;
-    background-color: #65baa6;
+    background-color: hsl(198, 67%, 42%);
     color: white;
     padding: 1rem;
 }
@@ -95,7 +95,7 @@ footer {
 }
 
 .carrito-de-compras {
-    background-color: #252424;
+    background-color: #8f8a8a;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
