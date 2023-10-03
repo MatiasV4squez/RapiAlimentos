@@ -7,7 +7,7 @@ body {
 
 header {
     display: flex;
-    background-color: #65baa6;
+    background-color: hsl(198, 67%, 42%);
     color: white;
     padding: 1rem;
 }
@@ -77,7 +77,7 @@ section {
 }
 
 .producto img {
-    max-width: 100px;
+    max-width: 150px;
     margin-right: 1rem;
     display: flex;
     flex-direction: row;
@@ -95,13 +95,20 @@ footer {
 }
 
 .carrito-de-compras {
-    background-color: white;
+    background-color: #8f8a8a;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px;
-    width: 300px;
-    position:absolute;
+    width: 285px;
+    position: absolute;
+    margin-left: 321px;
+    margin-top: -57px;
+
+}
+
+.carrito-de-compras:hover > .elemento-del-carrito{
+    display: block;
 }
 
 .carrito-de-compras h2 {
