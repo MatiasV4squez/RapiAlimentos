@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro-de-usuarios</title>
+    
+    <style>
+        div {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de datos</h1>
+    <div>
+        <label for="Nombre">Nombre : </label>
+        <div>
+            <input type="text" name="Nombre" id="Nombre">
+        </div>      
+    </div>
+    <div>
+        <label for="Apellido">Apellido : </label>
+        <div>
+            <input type="text" name="Apellido" id="Apellido"> 
+        </div>
+    </div>
+    <div>
+        <label for="Usuario">Usuario : </label>
+        <div>
+            <input type="text" name="Usuario" id="Usuario"> 
+        </div>
+    </div>
+    <div>
+        <label for="Con">Contraseña : </label>
+        <div>
+            <input type="password" name="Con" id="Con"> 
+        </div>
+    </div>
+    <div for="Btn">
+        <button id="Btn">Crear</button>
+    </div>
+
+    <div>
+        <p id="respuesta"></p>
+    </div>
+
+    <script>
+        const BTNok = document.getElementById("Btn");
+
+        BTNok.addEventListener("click", function () {
+            const Nombre = document.getElementById("Nombre").value;
+            const Usuario = document.getElementById("Usuario").value;
+            const Apellido = document.getElementById("Apellido").value;
+            const contra = document.getElementById("Con").value;
+
+            const formData = new FormData();
+            formData.append("Nombre", Nombre);
+            formData.append("Usuario", Usuario);
+            formData.append("Apellido", Apellido);
+            formData.append("Con", contra);
+
+            fetch('../PHP/Conexion.php', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(data =>{
+                const responseMessage = document.getElementById("respuesta");
+                responseMessage.textContent = data;})
+            .catch(error => console.error('Error:', error));
+
+            
+        });
+    </script>
+
+
+    <h1>Log in</h1>
+    <div>
+        <label for="UsuarioLog">Usuario : </label>
+        <div>
+            <input type="text" name="UsuarioLog" id="UsuarioLog"> 
+        </div>
+    </div>
+    <div>
+        <label for="ConLog">Contraseña : </label>
+        <div>
+            <input type="text" name="ConLog" id="ConLog">
+        </div>
+    </div>
+    <div>
+        <button id="BtnLog">Iniciar</button>
+    </div>
+
+    <div>
+        <p id="respuesta1"></p>
+    </div>
+
+    <script>
+        
+        const BTNlog = document.getElementById("BtnLog");
+
+        BTNlog.addEventListener("click", function () {
+            const Usuario = document.getElementById("UsuarioLog").value;
+            const contra = document.getElementById("ConLog").value;
+
+            const formData = new FormData();
+            formData.append("UsuarioLog", Usuario);
+            formData.append("ConLog", contra);
+
+            fetch('../PHP/Conexion.php', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(data => {const responseMessage = document.getElementById("respuesta1");
+                responseMessage.textContent = data;})
+                
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+    
+</body>
+</html>
