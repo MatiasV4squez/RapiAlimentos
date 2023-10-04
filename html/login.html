@@ -42,6 +42,18 @@
                 </div>
             </div>
             <div>
+                <label for="Direccion">Direccion : </label>
+                <div>
+                    <input type="text" name="Direccion" id="Direccion"> 
+                </div>
+            </div>
+            <div>
+                <label for="ID_ciu">ciudad : </label>
+                <div>
+                    <input type="text" name="ID_ciu" id="ID_ciu"> 
+                </div>
+            </div>
+            <div>
                 <label for="Con">Contraseña : </label>
                 <div>
                     <input type="password" name="Con" id="Con"> 
@@ -50,11 +62,10 @@
             <div for="Btn">
                 <button id="Btn">Crear</button>
             </div>
-        
+            
             <div>
                 <p id="respuesta"></p>
             </div>
-
         </div>
 
         <div>
@@ -68,7 +79,7 @@
             <div>
                 <label for="ConLog">Contraseña : </label>
                 <div>
-                    <input type="text" name="ConLog" id="ConLog">
+                    <input type="password" name="ConLog" id="ConLog">
                 </div>
             </div>
             <div>
@@ -79,16 +90,65 @@
                 <p id="respuesta1"></p>
             </div>
         </div>
-       
     </section>
-    
 
-    <script src="../JS/signin.js"></script>
-    <script src="../JS/login.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const BTNok = document.getElementById("Btn");
 
+        BTNok.addEventListener("click", function () {
+            const Nombre = document.getElementById("Nombre").value;
+            const Usuario = document.getElementById("Usuario").value;
+            const Apellido = document.getElementById("Apellido").value;
+            const Con = document.getElementById("Con").value;
+            const Direccion = document.getElementById("Direccion").value;
+            const ID_ciu = document.getElementById("ID_ciu").value;
+
+            const formData = new FormData();
+            formData.append("Nombre", Nombre);
+            formData.append("Usuario", Usuario);
+            formData.append("Apellido", Apellido);
+            formData.append("Con", Con);
+            formData.append("Direccion", Direccion);
+            formData.append("ID_ciu", ID_ciu); // Add ID_ciu
+
+            fetch('../PHP/Conexion.php', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(data => {
+                const responseMessage = document.getElementById("respuesta");
+                responseMessage.textContent = data;
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+    </script>
+    <script>
+        const BTNlog = document.getElementById("BtnLog");
+
+        BTNlog.addEventListener("click", function () {
+            const Usuario = document.getElementById("UsuarioLog").value;
+            const contra = document.getElementById("ConLog").value;
+
+            const formData = new FormData();
+            formData.append("UsuarioLog", Usuario);
+            formData.append("ConLog", contra);
+
+            fetch('../PHP/Conexion.php', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(data => {const responseMessage = document.getElementById("respuesta1");
+                responseMessage.textContent = data;})
+                
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
     <footer>
         <p>Copyright © 2023. Todos los derechos reservados.</p>
     </footer>
-    
 </body>
 </html>

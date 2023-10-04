@@ -5,12 +5,16 @@ BTNok.addEventListener("click", function () {
     const Usuario = document.getElementById("Usuario").value;
     const Apellido = document.getElementById("Apellido").value;
     const contra = document.getElementById("Con").value;
+    const Direccion = document.getElementById("Direccion").value;v$Direccion = $_POST["Direccion"];
+    const ID_ciu = document.getElementById("ID_ciu").value;
+
 
     const formData = new FormData();
     formData.append("Nombre", Nombre);
     formData.append("Usuario", Usuario);
     formData.append("Apellido", Apellido);
     formData.append("Con", contra);
+    formData.append("Direccion", Direccion);
 
     fetch('../PHP/Conexion.php', {
         method: 'POST',
