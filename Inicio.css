@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #65baa6;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 250px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #361616;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos específicos para las secciones */
+.highlight,
+.how-it-works,
+.why-choose-us,
+.join-community {
+    margin-bottom: 30px;
+}
+
+/* Estilos para el botón de registro */
+.join-community a {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.join-community a:hover {
+    background-color: #ff4500;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para el botón de menú en la esquina superior izquierda */
+#menu-button {
+    background-color: #ff6600;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Estilos para el menú desplegable que sale desde la izquierda */
+#menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease;
+}
+
+/* Estilos para los elementos del menú */
+#menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para mostrar el menú cuando está activo */
+#menu.active {
+    left: 0;
+}
+
+/* ... (otros estilos) */
