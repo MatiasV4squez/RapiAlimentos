@@ -1,0 +1,102 @@
+.imagen-container {
+    display: inline-block; /* Hace que los elementos estén en línea */
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+body {
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Fondo con degradado blanco */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    color: #fff; /* Color de texto en la barra de navegación */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.titulo {
+    /* Estilos para el título si los necesitas */
+}
+.titulo h1 {
+    margin: 0; /* Elimina el margen por defecto */
+    position: absolute; /* Coloca el título en una posición absoluta */
+    top: 0; /* Posición superior del título */
+    left: 0; /* Posición izquierda del título */
+    margin-left: 10px; /* Corre el título 10px a la izquierda */
+}
+.search-bar {
+    /* Elimina el margen de la barra de búsqueda */
+    margin: 0;
+    float: right; /* Alinea la barra de búsqueda a la derecha */
+}
+.ingresar-button {
+    /* Coloca el botón "Ingresar" en la esquina superior derecha */
+    position: absolute; /* Coloca el botón en una posición absoluta */
+    top: 0; /* Posición superior del botón */
+    right: 0; /* Posición derecha del botón */
+    margin-right: 10px; /* Corre el botón 10px a la derecha */
+}
+.ingresar-button img {
+    width: 24px; /* Tamaño de la imagen del botón */
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
+nav {
+    background-color: rgba(59, 154, 145, 0);
+    padding: 1rem;
+    color: white;
+    margin-left: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-style: oblique;
+    margin-left:40px ;
+    margin-right:240px;
+    margin-bottom: 100px;
+}
+section {
+    display: flex;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-direction: row;
+}
+.producto img {
+    max-width: 100px;
+    margin-right: 1rem;
+}
+
+#productoS {
+    display: flex;
+    flex-direction: row;
+}
+footer {
+    background-color: #65baa6;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
