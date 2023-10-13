@@ -1,20 +1,29 @@
-.imagen-container {
-    display: inline-block; /* Hace que los elementos estén en línea */
-    margin-right: 10px; /* Espacio entre las imágenes */
-}
+
 body {
-    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Fondo con degradado blanco */
+    background:  #e5f2e5;  /* Fondo con degradado blanco */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
+
+.imagen-container {
+    display: inline-block; /* Hace que los elementos estén en línea */
+    margin-right: 10px; /* Espacio entre las imágenes */
+   
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 header {
-    background-color: #333; /* Color de fondo de la barra de navegación */
-    color: #fff; /* Color de texto en la barra de navegación */
+    background:#556B2F; /* Fondo con degradado de colores relacionados con alimentos */
+    color: #fff; /* Color de texto en el encabezado */
     padding: 10px;
     display: flex;
-    justify-content: space-between; /* Coloca los elementos a los extremos */
-    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between;
+    align-items: center;
 }
 .container {
     max-width: 1200px;
@@ -94,9 +103,23 @@ section {
     flex-direction: row;
 }
 footer {
-    background-color: #65baa6;
+    background:transparent;
     color: white;
     text-align: center;
     padding: 1rem;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.enlaces-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.enlaces-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
