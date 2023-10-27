@@ -1,0 +1,100 @@
+body {
+    background:  #e5f2e5;  /* Fondo con degradado blanco */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background:#556B2F; /* Fondo con degradado de colores relacionados con alimentos */
+    color: white; /* Color de texto en el encabezado */
+    padding: 10px;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    gap: 10%;
+}
+
+#Titulo{
+    margin: 10px 75px 10px 75px;
+    grid-column: 1 span 2;
+}
+
+.Navegacion > a, nav {
+    margin: 35px 10px;
+    text-decoration: none;
+    color: white;
+    grid-column: 2 span 3;
+}
+
+#barra-busqueda{
+    margin: 35px 0px; 
+    grid-column: 3 span 4;
+}
+
+#barra-conf-extra{
+    margin: 0px 0px;
+    padding: 2px;
+    width: auto;
+    border-radius: 0px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+}
+
+section h1 {
+    font-size: 24px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #65baa6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3c8b81;
+}
