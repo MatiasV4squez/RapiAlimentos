@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rappi</title>
-    <link rel="stylesheet" href="css/index.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>RapiAlimentos</title>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-
-            <div id="Tilulo">
-                <h1>Rapia</h1>
-            </div>
-
-            <div>
-                <nav class="Navegacion">
-                    <a href="index.html">Inicio</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="carrito.html">Carrito</a>
-                    <a href="contactos.html">Contactos</a>
-                </nav>
-            </div>
-
-            <div id="barra-busqueda">
-                <input type="text" placeholder=" Buscar producto">
-            </div>
-
-            <div>
-                <nav class="Navegacion">
-                   <a href="login.html">Iniciar sesion</a> 
-                </nav>
-                
-            </div>
-        </div>
-    </header>
-
-    <section>
-        <div class="ofertas">
-            <h2>Ofertas</h2>
-            <p>imagenes de las ofertas</p>
-        </div>
-    </section>
-    <section>
-        <div class="about">
-            <h2>Acerca de Nosotros</h2>
-            <p>"--Rapi Alimentos--" nacio del sueño de poder dar alimento a todas las personas afectadas por la guerra 1939/1945.<br>
-            Al ser un pequeño niño y ser parte de una de los más tragicos sucesos de la historia. Fue lo que nos llevo a soñar la idea de un lugar de libre acceso donde cualquier persona<br> 
-            no importa el pais, el color o la etnia, "--Rapi alimentos--" siempre iba ser el lugar donde pudiera encontrar todos los alimentos que necesitara.  </p>
-        </div>  
-    </section>
-
-    <section>
-        <div class="services">
-            <h2>Nuestros Servicios</h2>
+    <nav>
+        <h1>RapiAlimentos</h1>
+        <div class="Categorias">
             <ul>
-                <li>Ventas de alimentos</li>
-                <li>Atencion al cliente</li>
-                <li>Sistema de socios // precios más bajos al por mayor</li>
+                <li><a href="Vista/Categorias.html">Categorias</a></li>
             </ul>
         </div>
+        <div class="form-bar">
+            <form action="#" method="get">
+                <input type="text" id="barsearch" placeholder="     ¿Que buscas?">
+                <button></button>
+            </form>
+        </div>
+        <div class="cart">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            <div class="cart-items">
+            
+            </div>
+        </div>
         
-    </section>
+        <div class="User">
+            <ul>
+                <li><a href="Vista/Contacto.html">Contacto</a></li>
+                <li><a href="Vista/login.html">Iniciar Sesion</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+        <div class="main-content">
+            
+            <div class="Carucel">
+                
+                <div class="left-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </div>
+                <div class="right-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+        </div> 
+
+        <div class="most">
+            <h2>Mas Vendidos</h2>
+            <div class="list-product">
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <P>&copy; Copyright 2023 RapiAlimentos Derechos Reservados</P>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
+
+
 </html>
