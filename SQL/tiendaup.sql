@@ -174,17 +174,18 @@ CREATE TABLE `productos` (
   `ID_Pro` int(11) NOT NULL AUTO_INCREMENT,
   `NombrePro` varchar(255) DEFAULT NULL,
   `Img` varchar(255) DEFAULT NULL,
+  `Precio` int(11) NOT NULL,
   `ID_cat` int(11),
   PRIMARY KEY (`ID_Pro`),
   FOREIGN KEY (`ID_cat`) REFERENCES `categorias`(`ID_cat`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-INSERT INTO `productos` (`ID_Pro`, `NombrePro`,`Img`, `ID_cat`) VALUES
-('Manzana',"https://4.bp.blogspot.com/-a3eVMg8-v1M/VRQKYxYRgXI/AAAAAAAAACE/2hqbqiRZ1ro/s1600/9dA3Z9lr-photo-pomme-2.png", 1),
-('Vacuno',"https://dialprix.es/blog/wp-content/uploads/carne-de-vacuno.jpg", 2),
-('Queso',"https://laboratoriosvital.com/wp-content/uploads/beneficios-de-comer-queso-en-ninos-1.jpg", 3),
-('Pan',"http://www.perderpeso.es/wp-content/uploads/2015/04/pan.jpg", 4);
+INSERT INTO `productos` (`NombrePro`, `Img`, `Precio`, `ID_cat`) VALUES
+('Manzana', 'https://4.bp.blogspot.com/-a3eVMg8-v1M/VRQKYxYRgXI/AAAAAAAAACE/2hqbqiRZ1ro/s1600/9dA3Z9lr-photo-pomme-2.png', 1200, 1),
+('Vacuno', 'https://dialprix.es/blog/wp-content/uploads/carne-de-vacuno.jpg',8500, 2),
+('Queso', 'https://laboratoriosvital.com/wp-content/uploads/beneficios-de-comer-queso-en-ninos-1.jpg',5000, 3),
+('Pan', 'http://www.perderpeso.es/wp-content/uploads/2015/04/pan.jpg',1000, 4);
 
 
 -- --------------------------------------------------------
