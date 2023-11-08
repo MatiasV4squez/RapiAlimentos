@@ -8,6 +8,36 @@ El fin de la empresa es el logra la facilidad de la compra de insumos basicos en
 
 #WHATS NEW??
 
+# V 1.2
+Html
+Nueva maquetacion, se cambio todo para hacerlo mas atractivo y moderno a la vista del usuario, con diversos divs que acceden a las 
+distintas interfaces de manera mas interactiva y con varios arreglos de errores
+
+Actualizaciones
+Se agrego el un nuevo html  de categorias y de carrito, se elimino el html de productos
+
+Css
+Cambio de color de las paginas:
+  - inicio
+  - Categorias
+  - contactos
+  - carrito
+  - inicio sesion
+Ademas se agregaron hoovers para los diversos divs, y cambios de color que se complementan con las funciones del javascript.
+
+JavaScript
+- Se mejoro la funcionalidad del carrito haciendo llevandola a un nuevo nivel agregando todo al nuevo html, para que no se vea tan desordenado y sea atractivo para el usuario.
+- Se implemento un filtro de los productos, donde al hacer click en algunas de las categorias disponibles este muestra los productos 
+pertenecientes a dicha categoria.
+- Ademas se agrego un evento de transicion en el html de inicio de sesion, en el cual al hacer click en los botones "Unete ahora" o 
+"Iniciar sesion", estos hacen una transicion correspondiente a su funcion dada.
+
+PHP
+Se agregaron los archivos de categorias.php, filtro_productos.php y productos.php, que mas que nada hacen la conexion con la base de datos para mostrar los productos disponibles, y hacer los distintos filtros aplicados a las categorias con el javascript.
+
+Base de Datos
+Se mejoro y se arreglaron los diversos errores con la boleta, comprador y vendedor, ademas de que se agrego la tabla de categorias y algunos productos para trabajar en el html.
+
 # V 1.1
 04-10-2023
 
