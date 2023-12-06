@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/stylepago.css">
+    <title>Página de Pagos</title>
+</head>
+<body>
+    <nav class="nav__display">
+        <div class="inicio">
+            <h1><a href="../index.html">RapiAlimento</a></h1>
+        </div>
+        
+        <div class="Categorias">
+            <ul>
+                <li><a href="Categorias.html">Categorias</a></li>
+            </ul>
+        </div>
+        <div class="cart__display">
+            <div class="cart__link">
+                <ul>
+                    <li><a href="carrito.html">Carrito</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="User">
+            <ul>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="User">
+            <ul>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Formulario de Pagos</h1>
+        <p>Total a pagar: <span id="total">500</span></p>
+        <form action="#" method="post">
+            <label for="nombre">Nombre en la tarjeta:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="tipo-tarjeta">Tipo de Tarjeta:</label>
+            <select id="tipo-tarjeta" name="tipo-tarjeta" required>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+
+            <label for="numero-tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="numero-tarjeta" name="numero-tarjeta" required>
+
+            <label for="fecha-expiracion">Fecha de Expiración:</label>
+            <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AA" required>
+
+            <label for="codigo-seguridad">Código de Seguridad:</label>
+            <input type="text" id="codigo-seguridad" name="codigo-seguridad" required>
+
+            <button onclick="realizarCompra()">Pagar</button>
+        </form>
+    </div>
+    <script src="../JS/compra.js"></script>
+</body>
+</html>
