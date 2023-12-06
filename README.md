@@ -7,6 +7,24 @@ El fin de la empresa es el logra la facilidad de la compra de insumos basicos en
 
 
 #WHATS NEW??
+# V 1.3 
+Php
+Se arreglaron errores con la conexión a base de datos desde registro y login
+
+Javascript
+-Se mejoro la lógica para que en la página método de pago mostrara el total a pagar
+-Tambien se mejoro el js de carrito para que se puedan aumentar o disminuir la cantidad de productos desde el carrito, sin la necesidad de volver a la página de productos
+
+Sql
+Se arregló la tabla de clientes, además se agregaron nuevos campos a la tabla de boleta (método de pago)
+
+Html
+Se agrego una nueva página de vista que es para procesar el pago de los productos
+
+Css
+Se agrego una nueva página de estilos para la página de pagos
+
+
 # V 1.2
 
 Html Nueva maquetacion, se cambio todo para hacerlo mas atractivo y moderno a la vista del usuario, con diversos divs que acceden a las distintas interfaces de manera mas interactiva y con varios arreglos de errores
